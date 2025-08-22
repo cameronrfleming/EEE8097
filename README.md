@@ -7,6 +7,16 @@ To run the python version:
 3. pip install: pyTsetlinMachine, scikit-learn, numpy, librosa, pandas, tqdm, resampy
 4. Run: `python performance_testing.py`
 
+Libraries needed for preprocessing in C:
+Run `sudo apt-get install <lib>`
+* libfftw3-dev
+* libsndfile1-dev
+
+Libraries needed for preprocessing in C++:
+* wavreader.c wavreader.h (https://sources.debian.org/src/vo-amrwbenc/0.1.2-1/wavreader.c/)
+* FiltFilt (https://github.com/KBaur/FiltFilt)
+* LibrosaCpp (https://github.com/ewan-xu/LibrosaCpp)
+
 To preprocess data using C:
 1. `cd c`
 2. `make lpreprocess`
@@ -14,7 +24,7 @@ To preprocess data using C:
 
 To preprocess data using C++:
 1. `cd cpp`
-2. `g++ feature_extraction.cpp`
+2. `g++ feature_extraction.cpp wavreader.c`
 3. `./a.out`
 4. `cp cpp_features_training.txt ../c/data/txt_cpp_features_training.txt`
 5. `cp cpp_features_test.txt ../c/data/txt_cpp_features_test.txt`
