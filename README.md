@@ -8,10 +8,9 @@ To run the python version:
 4. Run: `python performance_testing.py`
 
 Libraries needed for preprocessing in C:
-
-Run `sudo apt-get install <lib>`
-* libfftw3-dev
-* libsndfile1-dev
+* Run `sudo apt-get install <lib>`
+  * libfftw3-dev
+  * libsndfile1-dev
 
 Libraries needed for preprocessing in C++:
 * wavreader.c wavreader.h (https://sources.debian.org/src/vo-amrwbenc/0.1.2-1/wavreader.c/)
