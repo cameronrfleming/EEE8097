@@ -96,7 +96,7 @@ std::vector<std::vector<float>> convolve1d(std::vector<std::vector<float>> mfccs
 
 std::vector<float> read_file_and_preprocess(std::string filename) {
     std::stringstream ss;
-    ss << "../c_implementation/tsetlin/env_data/ESC-50-master/audio/" << filename;
+    ss << "../c/env_data/ESC-50-master/audio/" << filename;
     void* h_x = wav_read_open(ss.str().c_str());
     int format, channels, sr, bits_per_sample;
     unsigned int data_length;
@@ -282,7 +282,7 @@ split_data split_train_test(std::vector<std::string> audio_files, std::vector<in
 int main() {
     auto start_t = std::chrono::high_resolution_clock::now();
 
-    std::ifstream file("../c_implementation/tsetlin/env_data/ESC-50-master/meta/esc50.csv"); // Open the file
+    std::ifstream file("../c/env_data/ESC-50-master/meta/esc50.csv"); // Open the file
     if (!file) {
         std::cerr << "Error: File could not be opened!" << std::endl;
         return 1;
