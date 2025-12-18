@@ -118,7 +118,7 @@ int main() {
     long t_ms_s = currentMillis();
 
     // load all the files
-    char meta_data_path[] = "../tsetlin/env_data/ESC-50-master/meta/esc50.csv";
+    char meta_data_path[] = "../python/env_data/ESC-50-master/meta/esc50.csv";
     struct filedata* filed = filter_audio_files(meta_data_path);
 
     time_t time_filteraudio = time(NULL);
