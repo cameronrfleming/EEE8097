@@ -1,6 +1,10 @@
 # EEE8097
 Low-cost Environmental Sound Classification using Tsetlin Machines - C, C++, and Python Implementations
 
+First steps:
+1. Clone this repo
+2. Download the sound data from https://github.com/karoldvl/ESC-50/archive/master.zip into the python folder
+
 To run the python version:
 1. Build a virtual environment: `python3 -m venv venv`
 2. activate it: `source venv/bin/activate`
