@@ -71,7 +71,7 @@ struct feature_data* preprocess(float* audio_data, int len_audio, int sample_rat
 
 struct feature_data* load_and_preprocess_soundfile(char* filename) {
     char kaiser_file[32] = "kaiser_best_new.csv";
-    char full_filename[150] = "../tsetlin/env_data/ESC-50-master/audio/";
+    char full_filename[150] = "env_data/ESC-50-master/audio/";
     strcat(full_filename, filename);
     struct ptr_array_size_double output_data;
     load_soundfile(full_filename, kaiser_file, &output_data);
